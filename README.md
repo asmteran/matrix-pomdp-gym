@@ -5,6 +5,11 @@ This environment provides a discrete-action, continuous-observation space for Pa
 **Easy to Use**  
 This environment is straightforward and only requires matrix input for transitions, observations, and rewards.
 
+**Easy to Install**  
+```bash
+pip install matrix-pomdp-gym
+```
+
 **Origin and Multi-Objective Integration**  
 This environment is adapted from the [matrix-mdp-gym](https://github.com/Paul-543NA/matrix-mdp-gym) repository. Its multi-objective environment setting is based on [MO-Gymnasium](https://github.com/Farama-Foundation/MO-Gymnasium).
 
