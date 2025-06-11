@@ -22,9 +22,14 @@ Defined by the first dimension of `p` (a 3D array with shape (num_actions, num_s
 
 ## Observation Space
 
-Observations are belief states (1D arrays with shape (num_states,)), updated each step using an observation matrix `o` (shape (num_actions, num_states, num_observations)).  
+Observations are belief states (1D arrays with shape (num_states,))  
 • The belief is initialized to `p_0`.  
 • It updates with the chosen action and received observation.
+
+Updated each step using an observation matrix `o` (shape (num_actions, num_states, num_observations)).
+• Dimension 0 → selected observation action
+• Dimension 1 → current state
+• Dimension 2 → observation
 
 ## Rewards
 
@@ -48,6 +53,9 @@ Episodes end at terminal states, which have zero transition probabilities for al
 
 ## Usage
 
-Create a `MatrixPOMDPEnv` instance with the required parameters. Refer to the examples folder for Jupyter-based usage.
+Create a `MatrixPOMDPEnv` instance with the required parameters.
+
+Refer to the [Demo.ipynb](https://github.com/asmteran/matrix-pomdp-gym/blob/main/Demo.ipynb) for Jupyter-based usage. 
+
 Examples implemented in this repository draw on the POMDP-based methodologies discussed in:
 Corotis, R. B., Ellis, J. H., & Jiang, M. (2005). Modeling of risk-based inspection, maintenance and life-cycle cost with partially observable Markov decision processes. Structure and Infrastructure Engineering, 1(1), 75–84. https://doi.org/10.1080/15732470412331289305

@@ -10,7 +10,7 @@ short_description = (
 
 REQUIRED_PACKAGES = [
     "gymnasium >= 0.26.2",
-    "numpy >= 1.19.5",
+    "numpy >= 1.26.4",
 ]
 
 
@@ -26,6 +26,7 @@ setuptools.setup(
     name="matrix-pomdp-gym",
     version=VERSION,
     author="A. Saleh Mteran",
+    author_email="a.salehmteran@gmail.com",
     description=short_description,
     long_description=long_description,
     long_description_content_type="text/markdown",
